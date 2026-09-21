@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Resume</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom print styles to ensure it looks good if exported to PDF */
+        @media print {
+            body { background-color: white; }
+            .print-container { box-shadow: none; margin: 0; max-width: 100%; border-radius: 0; }
+            .print-sidebar { padding: 1.5rem !important; }
+            .print-main { padding: 1.5rem !important; }
+        }
+    </style>
+</head>
+<body class="bg-slate-100 font-sans text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <div class="max-w-6xl mx-auto my-0 md:my-10 bg-white shadow-2xl md:rounded-2xl overflow-hidden flex flex-col md:flex-row print-container">
+        
+        <!-- ================= LEFT COLUMN (SIDEBAR) ================= -->
+        <aside class="w-full md:w-1/3 bg-slate-900 text-slate-300 p-8 md:p-10 flex flex-col gap-10 print-sidebar">
+            
+            <!-- Profile Header -->
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl font-bold text-white tracking-tight mb-2">John Doe</h1>
+                <h2 class="text-xl font-medium text-brand-500 mb-6">Full Stack Web Developer</h2>
+                
+                <!-- Contact Info (Placeholders added for completeness) -->
+                <div class="flex flex-col gap-3 text-sm font-light">
+                    <a href="mailto:hello@example.com" class="flex items-center gap-3 hover:text-white transition-colors duration-200">
+                        <i class="fa-solid fa-envelope w-5 text-center text-slate-400"></i>
+                        hello@example.com
+                    </a>
+                    <a href="#" class="flex items-center gap-3 hover:text-white transition-colors duration-200">
+                        <i class="fa-solid fa-phone w-5 text-center text-slate-400"></i>
+                        +1 (555) 123-4567
+                    </a>
+                    <a href="#" class="flex items-center gap-3 hover:text-white transition-colors duration-200">
+                        <i class="fa-brands fa-github w-5 text-center text-slate-400"></i>
+                        github.com/johndoe
+                    </a>
+                    <a href="#" class="flex items-center gap-3 hover:text-white transition-colors duration-200">
+                        <i class="fa-brands fa-linkedin w-5 text-center text-slate-400"></i>
+                        linkedin.com/in/johndoe
+                    </a>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-location-dot w-5 text-center text-slate-400"></i>
+                        Tehran, Iran (or Remote)
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Skills -->
+            <div>
+                <h3 class="text-lg font-bold text-white uppercase tracking-wider mb-5 flex items-center gap-2 border-b border-slate-700 pb-2">
+                    <i class="fa-solid fa-code text-brand-500"></i> Technical Skills
+                </h3>
+                
+                <div class="flex flex-col gap-5">
+                    <!-- AI & LLM -->
+                    <div>
+                        <h4 class="text-sm font-semibold text-slate-100 mb-2">AI & LLM</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-purple-900/50 text-purple-200 text-xs rounded border border-purple-700/50">LLM APIs</span>
+                            <span class="px-2 py-1 bg-purple-900/50 text-purple-200 text-xs rounded border border-purple-700/50">RAG</span>
+                            <span class="px-2 py-1 bg-purple-900/50 text-purple-200 text-xs rounded border border-purple-700/50">Embeddings</span>
+                            <span class="px-2 py-1 bg-purple-900/50 text-purple-200 text-xs rounded border border-purple-700/50">Vector Search</span>
+                            <span class="px-2 py-1 bg-purple-900/50 text-purple-200 text-xs rounded border border-purple-700/50">AI-assisted Dev</span>
+                            <span class="px-2 py-1 bg-purple-900/50 text-purple-200 text-xs rounded border border-purple-700/50">AI Integration</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Frontend -->
+                    <div>
+                        <h4 class="text-sm font-semibold text-slate-100 mb-2">Frontend</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-blue-900/50 text-blue-200 text-xs rounded border border-blue-700/50">JavaScript</span>
+                            <span class="px-2 py-1 bg-blue-900/50 text-blue-200 text-xs rounded border border-blue-700/50">TypeScript</span>
+                            <span class="px-2 py-1 bg-blue-900/50 text-blue-200 text-xs rounded border border-blue-700/50">React</span>
+                            <span class="px-2 py-1 bg-blue-900/50 text-blue-200 text-xs rounded border border-blue-700/50">Next.js</span>
+                            <span class="px-2 py-1 bg-blue-900/50 text-blue-200 text-xs rounded border border-blue-700/50">Vue.js</span>
+                            <span class="px-2 py-1 bg-blue-900/50 text-blue-200 text-xs rounded border border-blue-700/50">Vite</span>
+                            <span class="px-2 py-1 bg-blue-900/50 text-blue-200 text-xs rounded border border-blue-700/50">Tailwind CSS</span>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div>
+                        <h4 class="text-sm font-semibold text-slate-100 mb-2">Backend</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-emerald-900/50 text-emerald-200 text-xs rounded border border-emerald-700/50">Node.js</span>
+                            <span class="px-2 py-1 bg-emerald-900/50 text-emerald-200 text-xs rounded border border-emerald-700/50">NestJS</span>
+                            <span class="px-2 py-1 bg-emerald-900/50 text-emerald-200 text-xs rounded border border-emerald-700/50">Express.js</span>
+                            <span class="px-2 py-1 bg-emerald-900/50 text-emerald-200 text-xs rounded border border-emerald-700/50">FastAPI</span>
+                            <span class="px-2 py-1 bg-emerald-900/50 text-emerald-200 text-xs rounded border border-emerald-700/50">Socket.IO</span>
+                        </div>
+                    </div>
+
+                    <!-- Database -->
+                    <div>
+                        <h4 class="text-sm font-semibold text-slate-100 mb-2">Database</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-yellow-900/50 text-yellow-200 text-xs rounded border border-yellow-700/50">PostgreSQL</span>
+                            <span class="px-2 py-1 bg-yellow-900/50 text-yellow-200 text-xs rounded border border-yellow-700/50">MySQL</span>
+                            <span class="px-2 py-1 bg-yellow-900/50 text-yellow-200 text-xs rounded border border-yellow-700/50">MongoDB</span>
+                            <span class="px-2 py-1 bg-yellow-900/50 text-yellow-200 text-xs rounded border border-yellow-700/50">SQLite</span>
+                            <span class="px-2 py-1 bg-yellow-900/50 text-yellow-200 text-xs rounded border border-yellow-700/50">Prisma</span>
+                        </div>
+                    </div>
+
+                    <!-- Architecture -->
+                    <div>
+                        <h4 class="text-sm font-semibold text-slate-100 mb-2">Architecture</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-rose-900/50 text-rose-200 text-xs rounded border border-rose-700/50">REST API</span>
+                            <span class="px-2 py-1 bg-rose-900/50 text-rose-200 text-xs rounded border border-rose-700/50">Modular Arch</span>
+                            <span class="px-2 py-1 bg-rose-900/50 text-rose-200 text-xs rounded border border-rose-700/50">Repository Pattern</span>
+                            <span class="px-2 py-1 bg-rose-900/50 text-rose-200 text-xs rounded border border-rose-700/50">Design Patterns</span>
+                            <span class="px-2 py-1 bg-rose-900/50 text-rose-200 text-xs rounded border border-rose-700/50">SOLID</span>
+                        </div>
+                    </div>
+
+                    <!-- DevOps & Infrastructure -->
+                    <div>
+                        <h4 class="text-sm font-semibold text-slate-100 mb-2">DevOps & Infrastructure</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-cyan-900/50 text-cyan-200 text-xs rounded border border-cyan-700/50">Docker</span>
+                            <span class="px-2 py-1 bg-cyan-900/50 text-cyan-200 text-xs rounded border border-cyan-700/50">Docker Compose</span>
+                            <span class="px-2 py-1 bg-cyan-900/50 text-cyan-200 text-xs rounded border border-cyan-700/50">Linux</span>
+                            <span class="px-2 py-1 bg-cyan-900/50 text-cyan-200 text-xs rounded border border-cyan-700/50">Nginx</span>
+                            <span class="px-2 py-1 bg-cyan-900/50 text-cyan-200 text-xs rounded border border-cyan-700/50">IIS</span>
+                            <span class="px-2 py-1 bg-cyan-900/50 text-cyan-200 text-xs rounded border border-cyan-700/50">GitHub Actions</span>
+                            <span class="px-2 py-1 bg-cyan-900/50 text-cyan-200 text-xs rounded border border-cyan-700/50">GitLab CI/CD</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Collaboration -->
+                    <div>
+                        <h4 class="text-sm font-semibold text-slate-100 mb-2">Tools & Collaboration</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-slate-700 text-slate-200 text-xs rounded border border-slate-600">Git</span>
+                            <span class="px-2 py-1 bg-slate-700 text-slate-200 text-xs rounded border border-slate-600">GitHub</span>
+                            <span class="px-2 py-1 bg-slate-700 text-slate-200 text-xs rounded border border-slate-600">GitLab</span>
+                            <span class="px-2 py-1 bg-slate-700 text-slate-200 text-xs rounded border border-slate-600">Postman</span>
+                            <span class="px-2 py-1 bg-slate-700 text-slate-200 text-xs rounded border border-slate-600">Swagger/OpenAPI</span>
+                            <span class="px-2 py-1 bg-slate-700 text-slate-200 text-xs rounded border border-slate-600">Playwright</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div>
+                <h3 class="text-lg font-bold text-white uppercase tracking-wider mb-5 flex items-center gap-2 border-b border-slate-700 pb-2">
+                    <i class="fa-solid fa-graduation-cap text-brand-500"></i> Education
+                </h3>
+                <div class="flex flex-col gap-4">
+                    <div class="relative pl-4 border-l-2 border-slate-700">
+                        <div class="absolute w-2 h-2 bg-brand-500 rounded-full -left-[5px] top-1.5"></div>
+                        <h4 class="text-sm font-bold text-white leading-snug">Master's in Engineering Management</h4>
+                        <p class="text-xs text-slate-400 mt-1">Islamic Azad University, Central Tehran Branch</p>
+                    </div>
+                    <div class="relative pl-4 border-l-2 border-slate-700">
+                        <div class="absolute w-2 h-2 bg-brand-500 rounded-full -left-[5px] top-1.5"></div>
+                        <h4 class="text-sm font-bold text-white leading-snug">Bachelor's in Industrial Engineering</h4>
+                        <p class="text-xs text-slate-400 mt-1">Qom University of Technology</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div>
+                <h3 class="text-lg font-bold text-white uppercase tracking-wider mb-4 flex items-center gap-2 border-b border-slate-700 pb-2">
+                    <i class="fa-solid fa-language text-brand-500"></i> Languages
+                </h3>
+                <div class="flex justify-between items-center bg-slate-800/50 p-3 rounded-lg border border-slate-700">
+                    <span class="font-medium">English</span>
+                    <span class="text-xs font-semibold bg-brand-900/50 text-brand-300 py-1 px-2 rounded">Professional</span>
+                </div>
+                <div class="flex justify-between items-center bg-slate-800/50 p-3 rounded-lg border border-slate-700 mt-2">
+                    <span class="font-medium">Persian</span>
+                    <span class="text-xs font-semibold bg-brand-900/50 text-brand-300 py-1 px-2 rounded">Native</span>
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- ================= RIGHT COLUMN (MAIN CONTENT) ================= -->
+        <main class="w-full md:w-2/3 bg-white p-8 md:p-12 print-main">
+            
+            <!-- Professional Summary -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3 pb-2 border-b-2 border-slate-100">
+                    <i class="fa-solid fa-user-tie text-brand-500"></i> Professional Summary
+                </h3>
+                <div class="text-slate-600 leading-relaxed text-sm space-y-3 text-justify">
+                    <p>
+                        Web developer with 12 years of experience in designing and developing web applications, specializing primarily in JavaScript and TypeScript. Experienced in the full product development lifecycle, from requirement analysis and technical solution design to Frontend and Backend development, API and database design and implementation, testing, deployment, and maintaining software in Production environments.
+                    </p>
+                    <p>
+                        In the Frontend, I have experience building modern, modular, and maintainable user interfaces using React, Next.js, Vue.js, along with tools and libraries like Vite and Tailwind CSS. In the Backend, I have worked with Node.js, NestJS, Express.js, and FastAPI, as well as Socket.IO for real-time capabilities.
+                    </p>
+                    <p>
+                        In the Database domain, I have experience working with PostgreSQL, MySQL, and MongoDB, designing and implementing data structures tailored to project needs. Additionally, in infrastructure and Deployment, I have worked with Linux, Nginx, and Docker, and I use GitHub Actions for automating Build, Test, and Deployment processes.
+                    </p>
+                    <p>
+                        In workplace and team environments, I have experience participating in technical meetings, planning, team coordination, and collaborative problem-solving. I have also been active in organizing and participating in English language training sessions, knowledge sharing, and technical team training, placing high importance on continuous learning, knowledge transfer, and team growth. The ability to operate in this cycle allows me to drive a web product end-to-end, from analysis and development to deployment and stable execution in Production.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Professional Experience -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3 pb-2 border-b-2 border-slate-100">
+                    <i class="fa-solid fa-briefcase text-brand-500"></i> Professional Experience
+                </h3>
+                
+                <div class="space-y-8">
+                    <!-- Job 1 -->
+                    <div class="relative pl-6 before:absolute before:left-0 before:top-2 before:w-3 before:h-3 before:bg-brand-500 before:rounded-full before:border-4 before:border-brand-100 after:absolute after:left-[5px] after:top-5 after:w-0.5 after:h-[calc(100%+1rem)] after:bg-slate-200 last:after:hidden">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
+                            <h4 class="text-lg font-bold text-slate-800">Frontend Developer</h4>
+                            <span class="text-sm font-semibold text-brand-600 bg-brand-50 px-3 py-1 rounded-full w-max mt-1 md:mt-0">2020 – Present</span>
+                        </div>
+                        <h5 class="text-md font-medium text-slate-600 mb-3">Neko Industry Management Company</h5>
+                        <ul class="list-disc list-outside ml-4 text-sm text-slate-600 space-y-1.5 marker:text-slate-400">
+                            <li>Develop and maintain web applications.</li>
+                            <li>Develop user interfaces and implement new features.</li>
+                            <li>Collaborate with the technical team in analysis, development, and troubleshooting software issues.</li>
+                            <li>Participate in technical meetings, planning, and knowledge sharing.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 2 -->
+                    <div class="relative pl-6 before:absolute before:left-0 before:top-2 before:w-3 before:h-3 before:bg-brand-500 before:rounded-full before:border-4 before:border-brand-100 after:absolute after:left-[5px] after:top-5 after:w-0.5 after:h-[calc(100%+1rem)] after:bg-slate-200 last:after:hidden">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
+                            <h4 class="text-lg font-bold text-slate-800">Backend / Database Developer</h4>
+                            <span class="text-sm font-semibold text-brand-600 bg-brand-50 px-3 py-1 rounded-full w-max mt-1 md:mt-0">2024 – 2025</span>
+                        </div>
+                        <h5 class="text-md font-medium text-slate-600 mb-3">Risloo Company</h5>
+                        <ul class="list-disc list-outside ml-4 text-sm text-slate-600 space-y-1.5 marker:text-slate-400">
+                            <li>Develop Backend services using Node.js.</li>
+                            <li>Design and develop APIs.</li>
+                            <li>Work with databases and implement data access logic.</li>
+                            <li>Collaborate in the development and maintenance of software services.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 3 -->
+                    <div class="relative pl-6 before:absolute before:left-0 before:top-2 before:w-3 before:h-3 before:bg-brand-500 before:rounded-full before:border-4 before:border-brand-100 after:absolute after:left-[5px] after:top-5 after:w-0.5 after:h-[calc(100%+1rem)] after:bg-slate-200 last:after:hidden">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
+                            <h4 class="text-lg font-bold text-slate-800">Frontend Developer</h4>
+                            <span class="text-sm font-semibold text-brand-600 bg-brand-50 px-3 py-1 rounded-full w-max mt-1 md:mt-0">2019 – 2020</span>
+                        </div>
+                        <h5 class="text-md font-medium text-slate-600 mb-3">Orchid Pharmed / Bornafit Dr. Kaviani</h5>
+                        <ul class="list-disc list-outside ml-4 text-sm text-slate-600 space-y-1.5 marker:text-slate-400">
+                            <li>Develop user interfaces using Vue.js and Nuxt.js.</li>
+                            <li>Implement required pages and features of the product.</li>
+                            <li>Collaborate in the development and improvement of the Frontend.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 4 -->
+                    <div class="relative pl-6 before:absolute before:left-0 before:top-2 before:w-3 before:h-3 before:bg-brand-500 before:rounded-full before:border-4 before:border-brand-100 after:absolute after:left-[5px] after:top-5 after:w-0.5 after:h-[calc(100%+1rem)] after:bg-slate-200 last:after:hidden">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
+                            <h4 class="text-lg font-bold text-slate-800">Web Designer / JavaScript Developer</h4>
+                            <span class="text-sm font-semibold text-brand-600 bg-brand-50 px-3 py-1 rounded-full w-max mt-1 md:mt-0">2018 – 2019</span>
+                        </div>
+                        <h5 class="text-md font-medium text-slate-600 mb-3">Majazeh Company</h5>
+                        <ul class="list-disc list-outside ml-4 text-sm text-slate-600 space-y-1.5 marker:text-slate-400">
+                            <li>Design and develop web pages.</li>
+                            <li>Use JavaScript to implement interactive features.</li>
+                            <li>Develop and improve user interfaces.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 5 -->
+                    <div class="relative pl-6 before:absolute before:left-0 before:top-2 before:w-3 before:h-3 before:bg-brand-500 before:rounded-full before:border-4 before:border-brand-100 after:absolute after:left-[5px] after:top-5 after:w-0.5 after:h-full after:bg-slate-200 last:after:hidden">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
+                            <h4 class="text-lg font-bold text-slate-800">Web Development / IT Training</h4>
+                            <span class="text-sm font-semibold text-brand-600 bg-brand-50 px-3 py-1 rounded-full w-max mt-1 md:mt-0">2016 – 2018</span>
+                        </div>
+                        <h5 class="text-md font-medium text-slate-600 mb-3">Ermile Company</h5>
+                        <ul class="list-disc list-outside ml-4 text-sm text-slate-600 space-y-1.5 marker:text-slate-400">
+                            <li>Teach and provide practical training in HTML, CSS, JavaScript, Photoshop, and ICDL.</li>
+                            <li>Gain practical experience in designing and developing web pages.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Selected Projects -->
+            <section class="mb-10">
+                <h3 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3 pb-2 border-b-2 border-slate-100">
+                    <i class="fa-solid fa-laptop-code text-brand-500"></i> Selected Projects
+                </h3>
+                
+                <div class="space-y-6">
+                    <!-- Project 1 -->
+                    <div class="group border border-slate-200 rounded-xl p-5 hover:shadow-lg hover:border-brand-200 transition duration-300 bg-white">
+                        <h4 class="text-lg font-bold text-slate-800 mb-1 group-hover:text-brand-600 transition-colors">Management Platform of Neko Industry Management Company</h4>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-[11px] font-medium px-2 py-0.5 bg-slate-100 text-slate-600 rounded">React</span>
+                            <span class="text-[11px] font-medium px-2 py-0.5 bg-slate-100 text-slate-600 rounded">Vue.js</span>
+                            <span class="text-[11px] font-medium px-2 py-0.5 bg-slate-100 text-slate-600 rounded">TypeScript</span>
+                            <span class="text-[11px] font-medium px-2 py-0.5 bg-slate-100 text-slate-600 rounded">MantineDev</span>
+                            <span class="text-[11px] font-medium px-2 py-0.5 bg-slate-100 text-slate-600 rounded">AG Grid</span>
+                            <span class="text-[11px] font-medium px-2 py-0.5 bg-slate-100 text-slate-600 rounded">REST API</span>
+                            <span class="text-[11px] font-medium px-2 py-0.5 bg-slate-100 text-slate-600 rounded">AI Integration</span>
+                        </div>
+                        <ul class="list-disc list-outside ml-4 text-sm text-slate-600 space-y-1.5 marker:text-slate-400">
+                            <li>Responsibility for developing and maintaining the Frontend section and collaborating on the evolution of the core architecture and features of the product.</li>
+                            <li>Participated in migrating the Frontend from Vue.js to React to meet the growing needs of the project and improve structure and maintainability.</li>
+                            <li>Designed the API communication layer based on the Repository Pattern to separate data access logic from UI and increase maintainability.</li>
+                            <li>Developed a custom Form Generator for creating and managing customizable and reusable forms across different parts of the system.</li>
+                            <li>Implemented complex, data-driven tables with AG Grid supporting Server-side Search, Filter, Sort, and Pagination.</li>
+                            <li>Developed reusable and custom components including Dropdowns, Multi-selects, forms, and form-related actions using Mantine and other Frontend tools.</li>
+                            <li>Integrated AI capabilities into the platform and developed AI-related user interfaces to add smart features to organizational processes.</li>
+                            <li>Participated in development, debugging, performance improvement, and software maintenance in the Production environment.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="group border border-slate-200 rounded-xl p-5 hover:shadow-lg hover:border-brand-200 transition duration-300 bg-white">
+                        <h4 class="text-lg font-bold text-slate-800 mb-1 group-hover:text-brand-600 transition-colors">Pomodoro App</h4>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="text-[11px] font-medium px-2 py-0.5 bg-slate-100 text-slate-600 rounded">NestJS</span>
+                            <span class="text-[11px] font-medium px-2 py-0.5 bg-slate-100 text-slate-600 rounded">Node.js</span>
+                            <span class="text-[11px] font-medium px-2 py-0.5 bg-slate-100 text-slate-600 rounded">TypeScript</span>
+                            <span class="text-[11px] font-medium px-2 py-0.5 bg-slate-100 text-slate-600 rounded">Auth</span>
+                            <span class="text-[11px] font-medium px-2 py-0.5 bg-slate-100 text-slate-600 rounded">2FA</span>
+                        </div>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            A time management application with a custom Backend based on NestJS. This project includes an authentication system, two-factor authentication (2FA), and Authenticator support to increase user account security.
+                        </p>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="group border border-slate-200 rounded-xl p-5 hover:shadow-lg hover:border-brand-200 transition duration-300 bg-white">
+                        <h4 class="text-lg font-bold text-slate-800 mb-1 group-hover:text-brand-600 transition-colors">Basic Planner</h4>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="text-[11px] font-medium px-2 py-0.5 bg-slate-100 text-slate-600 rounded">FastAPI</span>
+                            <span class="text-[11px] font-medium px-2 py-0.5 bg-slate-100 text-slate-600 rounded">Next.js</span>
+                            <span class="text-[11px] font-medium px-2 py-0.5 bg-slate-100 text-slate-600 rounded">TypeScript</span>
+                            <span class="text-[11px] font-medium px-2 py-0.5 bg-slate-100 text-slate-600 rounded">Workflow</span>
+                        </div>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            A planning and process management system where roles, managers, team members, and workflows are defined. Work processes are built on a custom Calendar. The backend is developed with FastAPI and the frontend with Next.js.
+                        </p>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="group border border-slate-200 rounded-xl p-5 hover:shadow-lg hover:border-brand-200 transition duration-300 bg-white">
+                        <h4 class="text-lg font-bold text-slate-800 mb-1 group-hover:text-brand-600 transition-colors">AI Chat</h4>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <span class="text-[11px] font-medium px-2 py-0.5 bg-slate-100 text-slate-600 rounded">LLM APIs</span>
+                            <span class="text-[11px] font-medium px-2 py-0.5 bg-slate-100 text-slate-600 rounded">OpenRouter</span>
+                            <span class="text-[11px] font-medium px-2 py-0.5 bg-slate-100 text-slate-600 rounded">Gemini</span>
+                            <span class="text-[11px] font-medium px-2 py-0.5 bg-slate-100 text-slate-600 rounded">Streaming</span>
+                        </div>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            An AI chat platform with the ability to connect and use API Keys from various services including OpenRouter, Hugging Face, and Gemini. This project supports Memory for preserving conversation context, Streaming for gradual response display, and Markdown for structured content rendering.
+                        </p>
+                    </div>
+
+                    <!-- Other Projects -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+                        <h4 class="text-md font-bold text-slate-800 mb-2">Other Projects</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Multiple web applications and projects in various domains using <span class="font-semibold">JavaScript, TypeScript, React, Vue.js, Node.js</span>, and other related technologies.
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
